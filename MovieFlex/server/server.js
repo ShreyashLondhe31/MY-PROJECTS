@@ -2,12 +2,15 @@ import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+import path from "path";
 
 dotenv.config(); // Load environment variables from .env file
 
 const app = express();
-app.use(cors());
+app.use(cors({ origin: "http://localhost:3000" }));
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "/client/public")));
+app.use(express.urlencoded({ extended: true }));
 
 // Connect to MongoDB
 mongoose
