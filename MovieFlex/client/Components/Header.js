@@ -1,24 +1,31 @@
+import Link from "next/link";
+
 const Header = () => {
+  console.log();
   return (
     <>
-      <div className="  text-white bg-gradient-to-t flex items-center justify-between px-16  pt-5 ">
+      <div className="relative z-[1]  header-section w-full  text-white flex  items-center justify-between px-16  pt-5  ">
         <h1 className="text-4xl font-bold ">MovieFlex</h1>
-        <div className="text-base flex gap-10 list-none">
+        <div className=" gap-10 list-none font-semibold flex ">
           <li>
-            <a href="">Adults</a>
+            <Link href="/About">About</Link>
           </li>
           <li>
-            <a href="">Kids</a>
+            <Link href="/Kids">Kids</Link>
           </li>
           <li>
-            <a href="">Trends</a>
+            <Link href="/Trends">Trends</Link>
           </li>
           <li>
-            <a href="">Mylist</a>
+            <Link href="/MyList">My List</Link>
           </li>
         </div>
-        <div className="search">
-          <input type="text" placeholder="Search" />
+        <div className="search ">
+          <input
+            className="px-5 py-2 rounded-md bg-transparent  backdrop-blur-2xl "
+            type="text"
+            placeholder="Search"
+          />
           <i className="fa fa-search" aria-hidden="true"></i>
         </div>
       </div>

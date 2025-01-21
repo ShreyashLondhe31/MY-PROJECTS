@@ -1,0 +1,48 @@
+const Images = [
+    {
+      title: "the-little-mermaid",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+      category: "Romance",
+      duration: "2hr 14min",
+      ageLimit: "12+",
+      img: "../public/images/movies/bg-little-mermaid.jpg",
+      year: 2023,
+    },
+    {
+      title: "the-65",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+      category: "Action",
+      duration: "1hr 44min",
+      ageLimit: "15+",
+      img: "../public/images/movies/bg-65.jpeg",
+      year: 2012,
+    },
+
+    {
+      title: "the-covenant",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+      category: "Action",
+      duration: "2hr 25min",
+      ageLimit: "18+",
+      img: "../public/images/movies/bg-the-covenant.jpeg",
+      year: 2002,
+    },
+    {
+      title: "the-tank",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+      category: "Triller",
+      duration: "1hr 25min",
+      ageLimit: "16+",
+      img: "../public/images/movies/bg-the-tank.jpeg",
+      year: 2012,
+    },
+    {
+      title: "the-black-demon",
+      desc: "Lorem ipsum dolor sit amet consectetur adipisicing.",
+      category: "Triller",
+      duration: "1hr 25min",
+      ageLimit: "16+",
+      img: "../public/images/movies/bg-the-demon.jpeg",
+      year: 2005,
+    },
+  ];
